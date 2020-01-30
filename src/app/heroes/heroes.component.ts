@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-
+  hero = 'Batman';
   constructor() { }
   // Angular llamará a esta función después de crear el componente
   ngOnInit() {
