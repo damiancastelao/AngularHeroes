@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+// importamos la clase que queremos usar
+import { Hero } from '../hero';
+
 // decorador que especifica los metadatos
 @Component({
   // nombre del selector CSS del componente, asi se identificará en el html final
@@ -9,7 +12,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero = 'Batman';
+  hero: Hero = {
+    id: 1,
+    name: 'Superman'
+  };
+
   constructor() { }
   // Angular llamará a esta función después de crear el componente
   ngOnInit() {
