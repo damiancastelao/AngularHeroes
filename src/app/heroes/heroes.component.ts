@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // importamos la clase que queremos usar
 import { Hero } from '../hero';
+// importamos la lista de heroes
+import { HEROES } from '../mock-heroes';
 
 // decorador que especifica los metadatos
 @Component({
