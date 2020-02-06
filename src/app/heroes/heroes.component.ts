@@ -14,10 +14,8 @@ import { HEROES } from '../mock-heroes';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  hero: Hero = {
-    id: 1,
-    name: 'Superman'
-  };
+  // asignamos el array a la variable heroes
+  heroes = HEROES;
 
   constructor() { }
   // Angular llamará a esta función después de crear el componente
